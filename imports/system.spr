@@ -1,0 +1,18 @@
+//system.class
+class system{
+	public static void printLine(string x){
+		Console.WriteLine(x);
+	}
+
+	public static void print(string x){
+		Console.Write(x);
+	}
+
+	public static string getLine(){
+		return Console.ReadLine();
+	}
+
+	public static void release(){
+		Program.hide = true;
+	}
+}
