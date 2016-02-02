@@ -1,5 +1,17 @@
 //system.class
 class system{
+	public static String readFromFile(string path){
+		return File.ReadAllText(path);
+	}
+	
+	public static void writeToFile(string path, string content){
+		File.WriteAllText(path, content);
+	}
+	
+	public static void appendToFile(string path, string content){
+		File.AppendAllText(path, "\n" + content);
+	}
+
 	public static void printLine(string x){
 		Console.WriteLine(x);
 	}
